@@ -1,0 +1,29 @@
+<PaletteItem>
+    <Category>Arrays</Category>
+    <DisplayName>Char Array</DisplayName>
+    <Tooltip>A char array is an array consisting of characters,\n letters such as 'a', or symbols such as '?'.\nIf providing data, separate it with a space, do not use quotes, and do not provide a size.</Tooltip>
+    <Example>char[] varName = { 'a', 'z', '1', 'q' }</Example>
+    <Icon>org/qcc/modules/learningpalette/Arrays/array16.png</Icon>
+    <Languages>
+        <Language id="JAVA">
+            <codeTemplate1>char[] $varName;</codeTemplate1>
+            <codeTemplate2>char[] $varName = new char[$size];</codeTemplate2>
+            <codeTemplate3>char[] $varName = {$initializeValue};</codeTemplate3>
+        </Language>
+        <Language id="CPP">
+            <codeTemplate1>char $varName[$size];</codeTemplate1>
+            <codeTemplate2>char $varName[$size];</codeTemplate2>
+            <codeTemplate3>char $varName[] = {$initializeValue};</codeTemplate3>
+        </Language>
+    </Languages>
+    <!-- Customizer dynamic creation at runtime, currently supported controls:
+        Text, Combo
+    -->
+    <Customizer>
+        <Item type="Text" name="VariableName" label="Array Name:" value="" />
+        <Item type="Text" name="ArraySize" label="Array Size:" value="" />
+        <Item type="Text" name="InitializeValue" label="Array Initialized Value:" value="" />
+        <Item type="Text" name="Comment" label="Comment:" value="" />
+    </Customizer>
+    <PaletteLogicClass>org.qcc.modules.learningpalette.Arrays.LP_CharArray</PaletteLogicClass>
+</PaletteItem>

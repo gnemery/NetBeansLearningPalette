@@ -1,0 +1,61 @@
+<PaletteItem>
+    <Category>Loops</Category>
+    <DisplayName>For Loop</DisplayName>
+    <Tooltip>This is a for loop. It will start at a certain value, and loop\nuntil an end value has been reached.</Tooltip>
+    <Icon>org/qcc/modules/learningpalette/Loops/loop16.png</Icon>
+    <Languages>
+        <Language id="JAVA">
+            <codeTemplate1>for(int i = 0; i > 10; i++){/*TODO - your code here...*/}</codeTemplate1>
+            <codeTemplate2>for(int $varName = $startValue; $varName $condValue $value; $varName$increValue){/*TODO - your code here...*/}</codeTemplate2>
+            
+            <equalEqualValue><![CDATA[==]]></equalEqualValue>
+            <notEqualValue><![CDATA[!=]]></notEqualValue>
+            <greaterValue><![CDATA[>]]></greaterValue>
+            <lessValue><![CDATA[<]]></lessValue>
+            <greaterEqualValue><![CDATA[>=]]></greaterEqualValue>
+            <lessEqualValue><![CDATA[<=]]></lessEqualValue>
+            <plusPlusValue><![CDATA[++]]></plusPlusValue>
+            <minusMinusValue><![CDATA[--]]></minusMinusValue>
+        </Language>
+        <Language id="CPP">
+            <codeTemplate1>for(int i = 0; i > 10; i++){/*TODO - your code here...*/}</codeTemplate1>
+            <codeTemplate2>for(int $varName = $startValue; $varName $condValue $value; $varName$increValue){/*TODO - your code here...*/}</codeTemplate2>
+               
+            <equalEqualValue><![CDATA[==]]></equalEqualValue>
+            <notEqualValue><![CDATA[!=]]></notEqualValue>
+            <greaterValue><![CDATA[>]]></greaterValue>
+            <lessValue><![CDATA[<]]></lessValue>
+            <greaterEqualValue><![CDATA[>=]]></greaterEqualValue>
+            <lessEqualValue><![CDATA[<=]]></lessEqualValue>
+            <plusPlusValue><![CDATA[++]]></plusPlusValue>
+            <minusMinusValue><![CDATA[--]]></minusMinusValue>
+        </Language>
+    </Languages>
+    <!-- Customizer dynamic creation at runtime, currently supported controls:
+        Text, Combo
+    -->
+    <Customizer>
+        <Item type="Text" name="VariableName" label="Variable Name:" value="" />
+        <Item type="Text" name="StartValue" label="Start Value:" value="" />
+        <Item type="Combo" name="ConditionalValue" label="Conditional Value:" value="" >
+            <!-- Note first item on list is default (index 0)) -->
+            <Value>(None)</Value>
+            <Value><![CDATA[==]]></Value>
+            <Value><![CDATA[!=]]></Value>
+            <Value><![CDATA[>]]></Value>
+            <Value><![CDATA[<]]></Value>
+            <Value><![CDATA[>=]]></Value>
+            <Value><![CDATA[<=]]></Value>
+        </Item>
+        <Item type="Text" name="DefaultValue" label="Stop Value:" value="" />
+        <Item type="Combo" name="IncrementValue" label="Increment Value:" value="++" >
+            <!-- Note first item on list is default (index 0)) -->
+            <Value>(None)</Value>
+            <Value><![CDATA[++]]></Value>
+            <Value><![CDATA[--]]></Value>
+        </Item>
+        
+        <Item type="Text" name="Comment" label="Comment:" value="" />
+    </Customizer>
+    <PaletteLogicClass>org.qcc.modules.learningpalette.Loops.LP_ForLoop</PaletteLogicClass>
+</PaletteItem>

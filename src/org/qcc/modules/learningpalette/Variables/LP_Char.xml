@@ -1,0 +1,28 @@
+<PaletteItem>
+    <Category>Variables</Category>
+    <DisplayName>Char</DisplayName>
+    <Tooltip>This is a char variable.\nIt is a character such as 'a', 'c', '1', or '!'. \nMake sure you wrap your value in single quotes.</Tooltip>
+    <Example>A char will appear in your code as follows:\nchar variableName = 'a';</Example>
+    <Icon>org/qcc/modules/learningpalette/Variables/object16.png</Icon>
+    <Languages>
+        <Language id="JAVA">
+            <codeTemplate1>char $varName;</codeTemplate1>
+            <codeTemplate2>char $varName = '$value';</codeTemplate2>
+
+        </Language>
+        <Language id="CPP">
+            <codeTemplate1>char $varName;</codeTemplate1>
+            <codeTemplate2>char $varName = '$value';</codeTemplate2>
+
+        </Language>
+    </Languages>
+    <!-- Customizer dynamic creation at runtime, currently supported controls:
+        Text, Combo
+    -->
+    <Customizer>
+        <Item type="Text" name="VariableName" label="Variable Name:" value="" />
+        <Item type="Text" name="DefaultValue" label="Default Value:" value="" />
+        <Item type="Text" name="Comment" label="Comment:" value="" />
+    </Customizer>
+    <PaletteLogicClass>org.qcc.modules.learningpalette.Variables.LP_Char</PaletteLogicClass>
+</PaletteItem>

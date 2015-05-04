@@ -1,0 +1,33 @@
+<PaletteItem>
+    <Category>Loops</Category>
+    <DisplayName>Do While</DisplayName>
+    <Tooltip>This loop will continue to function while a condition is true.</Tooltip>
+    <Example> do { //Your code } while (blnVal == true).</Example>
+    <Icon>org/qcc/modules/learningpalette/Loops/loop16.png</Icon>
+    <Languages>
+        <Language id="JAVA">
+            <codeTemplate1>do {
+                //TODO: Your code here
+                //TODO: Make sure you have a way to exit this loop!
+                //Use "break;" or change the expression to a false value
+                } while ($Expression);
+            </codeTemplate1>
+        </Language>
+        <Language id="CPP">
+            <codeTemplate1>do {
+                //TODO: Your code here
+                //TODO: Make sure you have a way to exit this loop!
+                //Use "break;" or change the expression to a false value
+                } while ($Expression);
+            </codeTemplate1>
+        </Language>
+    </Languages>
+    <!-- Customizer dynamic creation at runtime, currently supported controls:
+        Text, Combo
+    -->
+    <Customizer>
+        <Item type="Expression" name="Expression" label="Do While True:" value="" />
+        <Item type="Text" name="Comment" label="Comment:" value="" />
+    </Customizer>
+    <PaletteLogicClass>org.qcc.modules.learningpalette.Loops.LP_DoWhile</PaletteLogicClass>
+</PaletteItem>

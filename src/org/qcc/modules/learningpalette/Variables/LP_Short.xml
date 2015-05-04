@@ -1,0 +1,28 @@
+<PaletteItem>
+    <Category>Variables</Category>
+    <DisplayName>Short</DisplayName>
+    <Tooltip>This is a short variable.\nIt stores positive and negative whole numbers between -32,768 and 32767.</Tooltip>
+    <Example>A short will appear in your code as follows:\nshort variableName = 3123;</Example>
+    <Icon>org/qcc/modules/learningpalette/Variables/object16.png</Icon>
+    <Languages>
+        <Language id="JAVA">
+            <codeTemplate1>short $varName;</codeTemplate1>
+            <codeTemplate2>short $varName = $value;</codeTemplate2>
+
+        </Language>
+        <Language id="CPP">
+            <codeTemplate1>short int $varName;</codeTemplate1>
+            <codeTemplate2>short int $varName = $value;</codeTemplate2>
+
+        </Language>
+    </Languages>
+    <!-- Customizer dynamic creation at runtime, currently supported controls:
+        Text, Combo
+    -->
+    <Customizer>
+        <Item type="Text" name="VariableName" label="Variable Name:" value="" />
+        <Item type="Text" name="DefaultValue" label="Default Value:" value="" />
+        <Item type="Text" name="Comment" label="Comment:" value="" />
+    </Customizer>
+    <PaletteLogicClass>org.qcc.modules.learningpalette.Variables.LP_Short</PaletteLogicClass>
+</PaletteItem>

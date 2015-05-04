@@ -1,0 +1,29 @@
+<PaletteItem>
+    <Category>Arrays</Category>
+    <DisplayName>Int Array</DisplayName>
+    <Tooltip>A int array is an array consisting of integers,\n whole numbers ranging from approx. -2.1 billion to 2.1 billion .\nIf providing data, separate it with a space, and do not provide a size.</Tooltip>
+    <Example>int[] varName = { 1233412, 0, -2830 }</Example>
+    <Icon>org/qcc/modules/learningpalette/Arrays/array16.png</Icon>
+    <Languages>
+        <Language id="JAVA">
+            <codeTemplate1>int[] $varName;</codeTemplate1>
+            <codeTemplate2>int[] $varName = new int[$size];</codeTemplate2>
+            <codeTemplate3>int[] $varName = {$initializeValue};</codeTemplate3>
+        </Language>
+        <Language id="CPP">
+            <codeTemplate1>int $varName[$size];</codeTemplate1>
+            <codeTemplate2>int $varName[$size];</codeTemplate2>
+            <codeTemplate3>int $varName[] = {$initializeValue};</codeTemplate3>
+        </Language>
+    </Languages>
+    <!-- Customizer dynamic creation at runtime, currently supported controls:
+        Text, Combo
+    -->
+    <Customizer>
+        <Item type="Text" name="VariableName" label="Array Name:" value="" />
+        <Item type="Text" name="ArraySize" label="Array Size:" value="" />
+        <Item type="Text" name="InitializeValue" label="Array Initialized Value:" value="" />
+        <Item type="Text" name="Comment" label="Comment:" value="" />
+    </Customizer>
+    <PaletteLogicClass>org.qcc.modules.learningpalette.Arrays.LP_IntArray</PaletteLogicClass>
+</PaletteItem>

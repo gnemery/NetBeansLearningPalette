@@ -1,0 +1,42 @@
+<PaletteItem>
+    <Category>Decisions</Category>
+    <DisplayName>Switch Block</DisplayName>
+    <Tooltip>This is a switch block. You can use this in place of an if statement to check for multiple specific values.</Tooltip>
+    <Example>switch (intValue) { case 1: //code here, case 2: //code here ... }</Example>
+    <Icon>org/qcc/modules/learningpalette/Decisions/component16.png</Icon>
+    <Languages>
+        <Language id="JAVA">
+            <codeTemplate1>
+                //TODO: Modify the case numbers to check for the value you want.
+                switch ($Variable) {
+                $Cases
+                default:
+                break;
+                }
+            </codeTemplate1>
+            <caseTemplate>case $number:
+                break;</caseTemplate>
+        </Language>
+        <Language id="CPP">
+            <codeTemplate1>
+                //TODO: Modify the case numbers to check for the value you want.
+                switch ($Variable) {
+                $Cases
+                default:
+                break;
+                }
+            </codeTemplate1>
+            <caseTemplate>case $number:
+                break;</caseTemplate>
+        </Language>
+    </Languages>
+    <!-- Customizer dynamic creation at runtime, currently supported controls:
+        Text, Combo
+    -->
+    <Customizer>
+        <Item type="Variable" name="Variable" label="Variable to Check:" value="" />
+        <Item type="Text" name="CaseCount" label="# Cases to Generate:" value="2" />
+        <Item type="Text" name="Comment" label="Comment:" value="" />
+    </Customizer>
+    <PaletteLogicClass>org.qcc.modules.learningpalette.Decisions.LP_SwitchCase</PaletteLogicClass>
+</PaletteItem>

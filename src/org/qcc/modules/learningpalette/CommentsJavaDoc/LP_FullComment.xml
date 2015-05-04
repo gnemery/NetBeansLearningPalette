@@ -1,0 +1,26 @@
+<PaletteItem>
+    <Category>Comments and JavaDoc</Category>
+    <DisplayName>Multi-Line Comment</DisplayName>
+    <Tooltip>This is a multi-line comment block.</Tooltip>
+    <Icon>org/qcc/modules/learningpalette/CommentsJavaDoc/comment16.png</Icon>
+    <Languages>
+        <Language id="JAVA">
+            <codeTemplate1>/**
+                * $Comment
+                */</codeTemplate1>
+        </Language>
+        
+        <Language id="CPP">
+            <codeTemplate1>/**
+                * $Comment
+                */</codeTemplate1>
+        </Language>
+    </Languages>
+    <!-- Customizer dynamic creation at runtime, currently supported controls:
+        Text, Combo
+    -->
+    <Customizer>
+        <Item type="Text" name="Comment" label="Comment:" value="" />
+    </Customizer>
+    <PaletteLogicClass>org.qcc.modules.learningpalette.CommentsJavaDoc.LP_FullComment</PaletteLogicClass>
+</PaletteItem>

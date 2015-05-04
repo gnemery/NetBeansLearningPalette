@@ -1,0 +1,26 @@
+<PaletteItem>
+    <Category>Input Output</Category>
+    <DisplayName>Read Text From Console</DisplayName>
+    <Tooltip>Read text from the console, and store it in a string.\nYou can change the type of variable once it has been pasted into your code.</Tooltip>
+    <Icon>org/qcc/modules/learningpalette/InputOutput/Item16.png</Icon>
+    <Languages>
+        <Language id="JAVA">
+            <codeTemplate1>System.out.print("$Prompt");
+                String $Variable= System.console().readLine();</codeTemplate1>
+        </Language>
+        <Language id="CPP">
+            <codeTemplate1>cout &lt;&lt; "$Prompt";
+                std::string $Variable;
+                cin &gt;&gt; $Variable;</codeTemplate1>
+        </Language>
+    </Languages>
+    <!-- Customizer dynamic creation at runtime, currently supported controls:
+        Text, Combo
+    -->
+    <Customizer>
+        <Item type="Text" name="Prompt" label="Prompt:" value="" />
+        <Item type="Text" name="Variable" label="Variable Name:" value="" />
+        <Item type="Text" name="Comment" label="Comment:" value="" />
+    </Customizer>
+    <PaletteLogicClass>org.qcc.modules.learningpalette.InputOutput.LP_ReadTextFromConsole</PaletteLogicClass>
+</PaletteItem>

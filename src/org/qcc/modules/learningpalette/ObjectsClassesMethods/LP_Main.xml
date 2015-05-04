@@ -1,0 +1,28 @@
+<PaletteItem>
+	<Category>Objects, Classes, Methods</Category>
+	<DisplayName>Main Method</DisplayName>
+	<Tooltip>This is the main method.</Tooltip>
+	<Languages>
+		<Language id="JAVA">
+            		<codeTemplate1>public static void main(String args[]) {
+        /*TODO - your code here...*/
+        System.out.println("$varName");
+    }</codeTemplate1>
+
+		</Language>
+		<Language id="CPP">
+            		<codeTemplate1>int main(int argc, char* argv[]) {
+        /*TODO - your code here...*/
+        printf("$varName");
+    }</codeTemplate1>
+		</Language>
+	</Languages>
+        <!-- Customizer dynamic creation at runtime, currently supported controls:
+        Text, Combo
+    -->
+    <Customizer>
+        <Item type="Text" name="VariableName" label="Test Variable Name:" value="" />
+        <Item type="Text" name="Comment" label="Comment:" value="" />
+    </Customizer>
+    <PaletteLogicClass>org.qcc.modules.learningpalette.ObjectsClassesMethods.LP_Main</PaletteLogicClass>
+</PaletteItem>

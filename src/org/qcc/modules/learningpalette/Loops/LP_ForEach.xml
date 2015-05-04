@@ -1,0 +1,48 @@
+<PaletteItem>
+    <Category>Loops</Category>
+    <DisplayName>For Each</DisplayName>
+    <Tooltip>This is an enhanced for loop. It will loop through each item in an array.</Tooltip>
+    <Icon>org/qcc/modules/learningpalette/Loops/loop16.png</Icon>
+    <Languages>
+        <Language id="JAVA">
+            <codeTemplate1>for(int x : y){/*TODO - your code here...*/}</codeTemplate1>
+            <codeTemplate2>for($value $varName : $arrayName){/*TODO - your code here...*/}</codeTemplate2>
+            
+            <byteValue><![CDATA[byte]]></byteValue>
+            <charValue><![CDATA[char]]></charValue>
+            <doubleValue><![CDATA[double]]></doubleValue>
+            <intValue><![CDATA[int]]></intValue>
+            <stringValue><![CDATA[String]]></stringValue>
+            
+        </Language>
+        <Language id="CPP">
+            <codeTemplate1>for(int x : y){/*TODO - your code here...*/}</codeTemplate1>
+            <codeTemplate2>for($value $varName : $arrayName){/*TODO - your code here...*/}</codeTemplate2>
+            
+            <byteValue><![CDATA[byte]]></byteValue>
+            <charValue><![CDATA[char]]></charValue>
+            <doubleValue><![CDATA[double]]></doubleValue>
+            <intValue><![CDATA[int]]></intValue>
+            <stringValue><![CDATA[string]]></stringValue>
+
+        </Language>
+    </Languages>
+    <!-- Customizer dynamic creation at runtime, currently supported controls:
+        Text, Combo
+    -->
+    <Customizer>
+        <Item type="Combo" name="DefaultValue" label="Variable Type:" value="" >
+            <!-- Note first item on list is default (index 0)) -->
+            <Value>(None)</Value>
+            <Value><![CDATA[byte]]></Value>
+            <Value><![CDATA[char]]></Value>
+            <Value><![CDATA[double]]></Value>
+            <Value><![CDATA[int]]></Value>
+            <Value><![CDATA[string]]></Value>
+        </Item>
+        <Item type="Text" name="VariableName" label="Variable Name:" value="" />
+        <Item type="Text" name="ArrayName" label="Array Name:" value="" />
+        <Item type="Text" name="Comment" label="Comment:" value="" />
+    </Customizer>
+    <PaletteLogicClass>org.qcc.modules.learningpalette.Loops.LP_ForEach</PaletteLogicClass>
+</PaletteItem>

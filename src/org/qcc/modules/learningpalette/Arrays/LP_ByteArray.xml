@@ -1,0 +1,29 @@
+<PaletteItem>
+    <Category>Arrays</Category>
+    <DisplayName>Byte Array</DisplayName>
+    <Tooltip>A byte array is an array consisting of bytes,\n numbers from -128 to 127.\nIf providing data, separate it with a space, and do not provide a size. </Tooltip>
+    <Example>byte[] varName = { 123, -3, 8, 0 }</Example>
+    <Icon>org/qcc/modules/learningpalette/Arrays/array16.png</Icon>
+    <Languages>
+        <Language id="JAVA">
+            <codeTemplate1>byte[] $varName;</codeTemplate1>
+            <codeTemplate2>byte[] $varName = new byte[$size];</codeTemplate2>
+            <codeTemplate3>byte[] $varName = {$initializeValue};</codeTemplate3>
+        </Language>
+        <Language id="CPP">
+            <codeTemplate1>byte $varName[$size];</codeTemplate1>
+            <codeTemplate2>byte $varName[$size];</codeTemplate2>
+            <codeTemplate3>byte $varName[] = {$initializeValue};</codeTemplate3>
+        </Language>
+    </Languages>
+    <!-- Customizer dynamic creation at runtime, currently supported controls:
+        Text, Combo
+    -->
+    <Customizer>
+        <Item type="Text" name="VariableName" label="Array Name:" value="" />
+        <Item type="Text" name="ArraySize" label="Array Size:" value="" />
+        <Item type="Text" name="InitializeValue" label="Array Initialized Value:" value="" />
+        <Item type="Text" name="Comment" label="Comment:" value="" />
+    </Customizer>
+    <PaletteLogicClass>org.qcc.modules.learningpalette.Arrays.LP_ByteArray</PaletteLogicClass>
+</PaletteItem>

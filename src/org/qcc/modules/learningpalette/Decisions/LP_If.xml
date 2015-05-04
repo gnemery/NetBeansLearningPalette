@@ -1,0 +1,30 @@
+<PaletteItem>
+    <Category>Decisions</Category>
+    <DisplayName>If</DisplayName>
+    <Tooltip>This is an if-statement, a conditional check in your code that only\n executes if the condition specified is true.</Tooltip>
+    <Example>if (1 + 1 == 2) { //This is true, and code here will be executed }</Example>
+    <Icon>org/qcc/modules/learningpalette/Decisions/component16.png</Icon>
+    <Languages>
+        <Language id="JAVA">
+            <codeTemplate1>if ($Expression) {
+                //Insert your code here
+                }
+            </codeTemplate1>
+        </Language>
+        
+        <Language id="CPP">
+            <codeTemplate1>if ($Expression) {
+                //Insert your code here
+                }
+            </codeTemplate1>
+        </Language>
+    </Languages>
+    <!-- Customizer dynamic creation at runtime, currently supported controls:
+        Text, Combo
+    -->
+    <Customizer>
+        <Item type="Expression" name="ConditionalValue" label="Conditional Value:" value="" />
+        <Item type="Text" name="Comment" label="Comment:" value="" />
+    </Customizer>
+    <PaletteLogicClass>org.qcc.modules.learningpalette.Decisions.LP_If</PaletteLogicClass>
+</PaletteItem>

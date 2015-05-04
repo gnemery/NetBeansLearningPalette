@@ -1,0 +1,28 @@
+<PaletteItem>
+    <Category>Variables</Category>
+    <DisplayName>String</DisplayName>
+    <Tooltip>This is a string variable.\nIt stores text.</Tooltip>
+    <Example>A string will appear in your code as follows:\nstring variableName = "Hello my name is Gabe!";</Example>
+    <Icon>org/qcc/modules/learningpalette/Variables/object16.png</Icon>
+    <Languages>
+        <Language id="JAVA">
+            <codeTemplate1>String $varName;</codeTemplate1>
+            <codeTemplate2>String $varName = "$value";</codeTemplate2>
+
+        </Language>
+        <Language id="CPP">
+            <codeTemplate1>string $varName;</codeTemplate1>
+            <codeTemplate2>string $varName = "$value";</codeTemplate2>
+
+        </Language>
+    </Languages>
+    <!-- Customizer dynamic creation at runtime, currently supported controls:
+        Text, Combo
+    -->
+    <Customizer>
+        <Item type="Text" name="VariableName" label="Variable Name:" value="" />
+        <Item type="Text" name="DefaultValue" label="Default Value:" value="" />
+        <Item type="Text" name="Comment" label="Comment:" value="" />
+    </Customizer>
+    <PaletteLogicClass>org.qcc.modules.learningpalette.Variables.LP_String</PaletteLogicClass>
+</PaletteItem>

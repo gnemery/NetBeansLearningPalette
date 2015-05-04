@@ -1,0 +1,36 @@
+<PaletteItem>
+    <Category>Variables</Category>
+    <DisplayName>Boolean</DisplayName>
+    <Tooltip>A boolean is a true or false value.</Tooltip>
+    <Example>A boolean will appear in your code as follows:\nboolean variableName = true;</Example>
+    <Icon>org/qcc/modules/learningpalette/Variables/object16.png</Icon>
+    <Languages>
+        <Language id="JAVA">
+            <codeTemplate1>boolean $varName;</codeTemplate1>
+            <codeTemplate2>boolean $varName = $value;</codeTemplate2>
+            <trueValue>true</trueValue>
+            <falseValue>false</falseValue>
+        </Language>
+        <Language id="CPP">
+            <codeTemplate1>bool $varName;</codeTemplate1>
+            <codeTemplate2>bool $varName = $value;</codeTemplate2>
+            <trueValue>true</trueValue>
+            <falseValue>false</falseValue>
+        </Language>
+    </Languages>
+    <!-- Customizer dynamic creation at runtime, currently supported controls:
+        Text, Combo
+    -->
+    <Customizer>
+        <Item type="Text" name="VariableName" label="Variable Name:" value="" />
+        <Item type="Combo" name="DefaultValue" label="Default Value:" value="" >
+            <!-- Note first item on list is default (index 0)) -->
+            <Value>(None)</Value>
+            <Value>True</Value>
+            <Value>False</Value>
+        </Item>
+        <Item type="Text" name="Comment" label="Comment:" value="" />
+        
+    </Customizer>
+    <PaletteLogicClass>org.qcc.modules.learningpalette.Variables.LP_Boolean</PaletteLogicClass>
+</PaletteItem>

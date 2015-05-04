@@ -1,0 +1,28 @@
+<PaletteItem>
+    <Category>Variables</Category>
+    <DisplayName>Byte</DisplayName>
+    <Tooltip>This is a byte variable.\nIt is a value between -128 and 127.</Tooltip>
+    <Example>A byte will appear in your code as follows:\nbyte variableName = 31;</Example>
+    <Icon>org/qcc/modules/learningpalette/Variables/object16.png</Icon>
+    <Languages>
+        <Language id="JAVA">
+            <codeTemplate1>byte $varName;</codeTemplate1>
+            <codeTemplate2>byte $varName = $value;</codeTemplate2>
+
+        </Language>
+        <Language id="CPP">
+            <codeTemplate1>byte $varName;</codeTemplate1>
+            <codeTemplate2>byte $varName = $value;</codeTemplate2>
+
+        </Language>
+    </Languages>
+    <!-- Customizer dynamic creation at runtime, currently supported controls:
+        Text, Combo
+    -->
+    <Customizer>
+        <Item type="Text" name="VariableName" label="Variable Name:" value="" />
+        <Item type="Text" name="DefaultValue" label="Default Value:" value="" />
+        <Item type="Text" name="Comment" label="Comment:" value="" />
+    </Customizer>
+    <PaletteLogicClass>org.qcc.modules.learningpalette.Variables.LP_Byte</PaletteLogicClass>
+</PaletteItem>

@@ -1,0 +1,27 @@
+<PaletteItem>
+    <Category>Decisions</Category>
+    <DisplayName>Else</DisplayName>
+    <Tooltip>This is an else statement, a conditional check in your code that only\n executes only if the if statement this is connected to is false.\nAttach this to an existing IF statement!</Tooltip>
+    <Example>if (1 + 1 == 3) { //False } else { // This code runs }</Example>
+    <Icon>org/qcc/modules/learningpalette/Decisions/component16.png</Icon>
+    <Languages>
+        <Language id="JAVA">
+            <codeTemplate1>else { $Comment
+                //TODO: Your code here
+                }</codeTemplate1>
+        </Language>
+        
+        <Language id="CPP">
+            <codeTemplate1>else { $Comment
+                //TODO: Your code here
+                }</codeTemplate1>
+        </Language>
+    </Languages>
+    <!-- Customizer dynamic creation at runtime, currently supported controls:
+        Text, Combo
+    -->
+    <Customizer>
+        <Item type="Text" name="Comment" label="Comment:" value="" />
+    </Customizer>
+    <PaletteLogicClass>org.qcc.modules.learningpalette.Decisions.LP_Else</PaletteLogicClass>
+</PaletteItem>

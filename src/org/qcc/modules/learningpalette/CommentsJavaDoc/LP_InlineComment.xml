@@ -1,0 +1,21 @@
+<PaletteItem>
+    <Category>Comments and JavaDoc</Category>
+    <DisplayName>Single Line Comment</DisplayName>
+    <Tooltip>This is an inline comment that occupies a single line of code.</Tooltip>
+    <Icon>org/qcc/modules/learningpalette/CommentsJavaDoc/comment16.png</Icon>
+    <Languages>
+        <Language id="JAVA">
+
+        </Language>
+        <Language id="CPP">
+
+        </Language>
+    </Languages>
+    <!-- Customizer dynamic creation at runtime, currently supported controls:
+        Text, Combo
+    -->
+    <Customizer>
+        <Item type="Text" name="Comment" label="Comment:" value="" />
+    </Customizer>
+    <PaletteLogicClass>org.qcc.modules.learningpalette.CommentsJavaDoc.LP_InlineComment</PaletteLogicClass>
+</PaletteItem>

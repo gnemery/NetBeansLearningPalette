@@ -1,0 +1,28 @@
+<PaletteItem>
+    <Category>Variables</Category>
+    <DisplayName>Double</DisplayName>
+    <Tooltip>This is a double variable.\nIt stores very large numbers, including decimals.</Tooltip>
+    <Example>A byte will appear in your code as follows:\ndouble variableName = -3231.319;</Example>
+    <Icon>org/qcc/modules/learningpalette/Variables/object16.png</Icon>
+    <Languages>
+        <Language id="JAVA">
+            <codeTemplate1>double $varName;</codeTemplate1>
+            <codeTemplate2>double $varName = $value;</codeTemplate2>
+
+        </Language>
+        <Language id="CPP">
+            <codeTemplate1>double $varName;</codeTemplate1>
+            <codeTemplate2>double $varName = $value;</codeTemplate2>
+
+        </Language>
+    </Languages>
+    <!-- Customizer dynamic creation at runtime, currently supported controls:
+        Text, Combo
+    -->
+    <Customizer>
+        <Item type="Text" name="VariableName" label="Variable Name:" value="" />
+        <Item type="Text" name="DefaultValue" label="Default Value:" value="" />
+        <Item type="Text" name="Comment" label="Comment:" value="" />
+    </Customizer>
+    <PaletteLogicClass>org.qcc.modules.learningpalette.Variables.LP_Double</PaletteLogicClass>
+</PaletteItem>

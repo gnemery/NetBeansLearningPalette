@@ -1,0 +1,113 @@
+<PaletteItem>
+    <Category>Objects, Classes, Methods</Category>
+    <DisplayName>New Class</DisplayName>
+    <Tooltip>Create a new class.</Tooltip>
+    <Languages>
+        <Language id="JAVA">
+            <codeTemplate1>public class MyNewClass{
+        public MyNewClass(){
+            int myExampleVariable = 0;
+    }
+}</codeTemplate1>
+            
+            <codeTemplate2>$modType class $varName {
+        public $varName(){
+            int myExampleVariable = 0;
+    }
+}</codeTemplate2>
+        
+            <codeTemplate3>$modType class $varName {
+        public $varName($paramType $paramName){
+            int myExampleVariable = 0;
+    }
+}</codeTemplate3>
+
+
+            <!-- Return Types -->
+            <voidValue>void</voidValue>
+            <integerValue>int</integerValue>
+            <doubleValue>double</doubleValue>
+            <stringValue>String</stringValue>
+            <booleanValue>boolean</booleanValue>
+            <byteValue>byte</byteValue>
+            <charValue>char</charValue>
+            <floatValue>float</floatValue>
+            <longValue>long</longValue>
+            <shortValue>short</shortValue>
+            
+            <!-- Modifier Types -->
+            <publicValue>public</publicValue>
+            <privateValue>private</privateValue>
+
+        </Language>
+        <Language id="CPP">
+            <codeTemplate1>class MyNewClass {
+        int myExampleVariable = 0;
+        public:
+            MyNewClass();
+    };
+}</codeTemplate1>
+            
+            <codeTemplate2>class $varName {
+        int myExampleVariable = 0;  
+        public:
+            $varName();
+    };
+}</codeTemplate2>
+        
+            <codeTemplate3>class $varName {
+        int myExampleVariable = 0; 
+        public:
+            $varName();
+            $varName($paramType $paramName);
+    };
+}</codeTemplate3>
+
+            <!-- Return Types -->
+            <integerValue>int</integerValue>
+            <doubleValue>double</doubleValue>
+            <stringValue>String</stringValue>
+            <booleanValue>boolean</booleanValue>
+            <byteValue>byte</byteValue>
+            <charValue>char</charValue>
+            <floatValue>float</floatValue>
+            <longValue>long</longValue>
+            <shortValue>short</shortValue>
+            
+            <!-- Modifier Types -->
+            <publicValue>public</publicValue>
+            <privateValue>private</privateValue>
+
+
+            
+        </Language>
+    </Languages>
+    <!-- Customizer dynamic creation at runtime, currently supported controls:
+        Text, Combo
+    -->
+    <Customizer>
+        <Item type="Combo" name="ModifierValue" label="Modifier Type:" value="" >
+            <!-- Note first item on list is default (index 0)) -->
+            <Value>(None)</Value>
+            <Value>public</Value>
+            <Value>private</Value>
+        </Item>
+        <Item type="Text" name="VariableName" label="Class Name:" value="" />
+        <Item type="Combo" name="ParameterType" label="Parameter Type:" value="" >
+            <!-- Note first item on list is default (index 0)) -->
+            <Value>(None)</Value>
+            <Value>int</Value>
+            <Value>double</Value>
+            <Value>String</Value>
+            <Value>boolean</Value>
+            <Value>byte</Value>
+            <Value>char</Value>
+            <Value>float</Value>
+            <Value>long</Value>
+            <Value>short</Value>
+        </Item>
+        <Item type="Text" name="ParameterName" label="Parameter Name:" value="" />
+        <Item type="Text" name="Comment" label="Comment:" value="" />
+    </Customizer>
+    <PaletteLogicClass>org.qcc.modules.learningpalette.ObjectsClassesMethods.LP_NewClass</PaletteLogicClass>
+</PaletteItem>

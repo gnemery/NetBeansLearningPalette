@@ -1,0 +1,19 @@
+<PaletteItem>
+	<Category>Decisions</Category>
+	<DisplayName>Expression</DisplayName>
+	<Tooltip>A byte value.</Tooltip>
+	<Languages>
+		<Language id="JAVA">
+            		<codeTemplate1>boolean $varName;</codeTemplate1>
+            		<codeTemplate2>boolean $varName = $value;</codeTemplate2>
+           		<trueValue>true</trueValue>
+		        <falseValue>false</falseValue>
+		</Language>
+		<Language id="CPP">
+            		<codeTemplate1>bool $varName;</codeTemplate1>
+		        <codeTemplate2>bool $varName = $value;</codeTemplate2>
+		        <trueValue>true</trueValue>
+		        <falseValue>false</falseValue>
+		</Language>
+	</Languages>
+</PaletteItem>

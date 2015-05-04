@@ -1,0 +1,19 @@
+<PaletteItem>
+    <Category>Input Output</Category>
+    <DisplayName>Send Text To Console</DisplayName>
+    <Tooltip>Send text to console to display to the end user.</Tooltip>
+    <Icon>org/qcc/modules/learningpalette/InputOutput/Item16.png</Icon>
+    <Languages>
+        <Language id="JAVA">
+            <codeTemplate1>System.out.println("$Prompt");</codeTemplate1>
+        </Language>
+        <Language id="CPP">
+            <codeTemplate1>cout &gt;&gt; "$Prompt";</codeTemplate1>
+        </Language>
+    </Languages>
+    <Customizer>
+        <Item type="Text" name="Prompt" label="Prompt:" value="" />
+        <Item type="Text" name="Comment" label="Comment:" value="" />
+    </Customizer>
+    <PaletteLogicClass>org.qcc.modules.learningpalette.InputOutput.LP_SendTextToConsole</PaletteLogicClass>
+</PaletteItem>

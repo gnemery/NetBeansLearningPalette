@@ -1,0 +1,51 @@
+<PaletteItem>
+    <Category>Loops</Category>
+    <DisplayName>While</DisplayName>
+    <Tooltip>This is a while loop. It will continue looping as long as the expression is true.</Tooltip>
+    <Icon>org/qcc/modules/learningpalette/Loops/loop16.png</Icon>
+    <Languages>
+        <Language id="JAVA">
+            <codeTemplate1>while (){};</codeTemplate1>
+            <codeTemplate2>while ($varName $condValue $value){/*TODO - your code here...*/};</codeTemplate2>
+            
+            <equalEqualValue><![CDATA[==]]></equalEqualValue>
+            <notEqualValue><![CDATA[!=]]></notEqualValue>
+            <greaterValue><![CDATA[>]]></greaterValue>
+            <lessValue><![CDATA[<]]></lessValue>
+            <greaterEqualValue><![CDATA[>=]]></greaterEqualValue>
+            <lessEqualValue><![CDATA[<=]]></lessEqualValue>
+        </Language>
+        
+        <Language id="CPP">
+            <codeTemplate1>while (){};</codeTemplate1>
+            <codeTemplate2>while ($varName $condvalue $value){/*TODO - your code here...*/};</codeTemplate2>
+               
+            <equalEqualValue><![CDATA[==]]></equalEqualValue>
+            <notEqualValue><![CDATA[!=]]></notEqualValue>
+            <greaterValue><![CDATA[>]]></greaterValue>
+            <lessValue><![CDATA[<]]></lessValue>
+            <greaterEqualValue><![CDATA[>=]]></greaterEqualValue>
+            <lessEqualValue><![CDATA[<=]]></lessEqualValue>
+        </Language>
+    </Languages>
+    
+    <!-- Customizer dynamic creation at runtime, currently supported controls:
+        Text, Combo
+    -->
+    <Customizer>
+        <Item type="Text" name="VariableName" label="Variable Name:" value="" />
+        <Item type="Combo" name="ConditionalValue" label="Conditional Value:" value="" >
+            <!-- Note first item on list is default (index 0)) -->
+            <Value>(None)</Value>
+            <Value><![CDATA[==]]></Value>
+            <Value><![CDATA[!=]]></Value>
+            <Value><![CDATA[>]]></Value>
+            <Value><![CDATA[<]]></Value>
+            <Value><![CDATA[>=]]></Value>
+            <Value><![CDATA[<=]]></Value>
+        </Item>
+        <Item type="Text" name="DefaultValue" label="Test Value:" value="" />
+        <Item type="Text" name="Comment" label="Comment:" value="" />
+    </Customizer>
+    <PaletteLogicClass>org.qcc.modules.learningpalette.Loops.LP_While</PaletteLogicClass>
+</PaletteItem>

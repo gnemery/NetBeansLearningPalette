@@ -1,0 +1,96 @@
+<PaletteItem>
+    <Category>Input Output</Category>
+    <DisplayName>Try Catch</DisplayName>
+    <Tooltip>This is an try/catch block,\n it will catch any errors your code may throw and stop execution.</Tooltip>
+    <Example>try { code to try here } catch (Exception ex) { code to run if an exception is thrown }</Example>
+    <Icon>org/qcc/modules/learningpalette/InputOutput/error.png</Icon>
+    <Languages>
+        <Language id="JAVA">
+            <codeTemplate1>//You can also add multiple catch statements for different types of exceptions.
+                try {
+                //TODO: Your code here
+                } catch ($ExceptionType ex) {
+                System.out.println(ex.toString());
+                } finally {
+                //TODO: Anything you want to do after your try or catch statement
+                }</codeTemplate1>
+        </Language>
+        
+        <Language id="CPP">
+            <codeTemplate1>//You can also add multiple catch statements for different types of exceptions.
+                try {
+                //TODO: Your code here
+                } catch ($ExceptionType ex) {
+                cout &gt;&gt; ex;
+                } finally {
+                //TODO: Anything you want to do after your try or catch statement
+                }</codeTemplate1>
+        </Language>
+    </Languages>
+    <!-- Customizer dynamic creation at runtime, currently supported controls:
+        Text, Combo
+    -->
+    <Customizer>
+        <Item type="Combo" name="ExceptionType" label="Exception Type:" value="" >
+            <!-- Note first item on list is default (index 0)) -->
+            <Value>Exception</Value>
+            <Value>ArithmeticException</Value>
+            <Value>ArrayIndexOutOfBoundsException</Value>
+            <Value>ArrayStoreException</Value>
+            <Value>ClassCastException</Value> 
+            <Value>ClassNotFoundException</Value> 
+            <Value>CloneNotSupportedException</Value>
+            <Value>IllegalAccessException</Value>
+            <Value>IllegalArgumentException</Value>
+            <Value>IllegalMonitorStateException</Value>
+            <Value>IllegalStateException</Value>
+            <Value>IllegalThreadStateException</Value>
+            <Value>IndexOutOfBoundsException</Value>
+            <Value>InstantiationException</Value>
+            <Value>InterruptedException</Value>
+            <Value>NegativeArraySizeException</Value>
+            <Value>NoSuchFieldException</Value>
+            <Value>NoSuchMethodException</Value>
+            <Value>NullPointerException</Value>
+            <Value>NumberFormatException</Value>
+            <Value>RuntimeException</Value>
+            <Value>SecurityException</Value>
+            <Value>StringIndexOutOfBoundsException</Value>
+            <Value>UnsupportedOperationException</Value> 
+            <Value>CharConversionException</Value>
+            <Value>EOFException</Value>
+            <Value>FileNotFoundException</Value>
+            <Value>InterruptedIOException</Value>
+            <Value>InvalidClassException</Value>
+            <Value>InvalidObjectException</Value>
+            <Value>IOException</Value>
+            <Value>NotActiveException</Value>
+            <Value>NotSerializableException</Value>
+            <Value>ObjectStreamException</Value>
+            <Value>OptionalDataException</Value>
+            <Value>StreamCorruptedException</Value>
+            <Value>SyncFailedException</Value>
+            <Value>UnsupportedEncodingException</Value>
+            <Value>UTFDataFormatException</Value>
+            <Value>WriteAbortedException</Value>
+            <Value>AccessControlException</Value>
+            <Value>DigestException</Value>
+            <Value>GeneralSecurityException</Value>
+            <Value>InvalidAlgorithmParameterException</Value>
+            <Value>InvalidKeyException</Value>
+            <Value>InvalidParameterException</Value>
+            <Value>KeyException</Value>
+            <Value>KeyManagementException</Value>
+            <Value>KeyStoreException</Value>
+            <Value>NoSuchAlgorithmException</Value>
+            <Value>NoSuchProviderException</Value>
+            <Value>PrivilegedActionException</Value>
+            <Value>ProviderException</Value>
+            <Value>SignatureException</Value>
+            <Value>UnrecoverableEntryException</Value>
+            <Value>UnrecoverableKeyException</Value>
+        </Item>
+        <Item type="Text" name="Comment" label="Comment:" value="" />
+    </Customizer>
+    <PaletteLogicClass>org.qcc.modules.learningpalette.InputOutput.LP_TryCatch</PaletteLogicClass>
+</PaletteItem>

@@ -1,0 +1,28 @@
+<PaletteItem>
+    <Category>Variables</Category>
+    <DisplayName>Float</DisplayName>
+    <Tooltip>This is a float variable.\nIt stores very precise numbers.</Tooltip>
+    <Example>A float will appear in your code as follows:\nfloat variableName = -3.12032319;</Example>
+    <Icon>org/qcc/modules/learningpalette/Variables/object16.png</Icon>
+    <Languages>
+        <Language id="JAVA">
+            <codeTemplate1>float $varName;</codeTemplate1>
+            <codeTemplate2>float $varName = $valuef;</codeTemplate2>
+
+        </Language>
+        <Language id="CPP">
+            <codeTemplate1>float $varName;</codeTemplate1>
+            <codeTemplate2>float $varName = $value;</codeTemplate2>
+
+        </Language>
+    </Languages>
+    <!-- Customizer dynamic creation at runtime, currently supported controls:
+        Text, Combo
+    -->
+    <Customizer>
+        <Item type="Text" name="VariableName" label="Variable Name:" value="" />
+        <Item type="Text" name="DefaultValue" label="Default Value:" value="" />
+        <Item type="Text" name="Comment" label="Comment:" value="" />
+    </Customizer>
+    <PaletteLogicClass>org.qcc.modules.learningpalette.Variables.LP_Float</PaletteLogicClass>
+</PaletteItem>

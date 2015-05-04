@@ -1,0 +1,23 @@
+<PaletteItem>
+	<Category>Objects, Classes, Methods</Category>
+	<DisplayName>New Object</DisplayName>
+	<Tooltip>Instantiate a new object.</Tooltip>
+	<Languages>
+		<Language id="JAVA">
+            		<codeTemplate1>$varName $objName = new $varName();</codeTemplate1>
+
+		</Language>
+		<Language id="CPP">
+            		<codeTemplate1>$varName $objName;</codeTemplate1>
+		</Language>
+	</Languages>
+        <!-- Customizer dynamic creation at runtime, currently supported controls:
+        Text, Combo
+    -->
+    <Customizer>
+        <Item type="Text" name="VariableName" label="Class Name:" value="" />
+        <Item type="Text" name="ObjectName" label="Object Name:" value="" />
+        <Item type="Text" name="Comment" label="Comment:" value="" />
+    </Customizer>
+    <PaletteLogicClass>org.qcc.modules.learningpalette.ObjectsClassesMethods.LP_InstantiateNewObject</PaletteLogicClass>
+</PaletteItem>

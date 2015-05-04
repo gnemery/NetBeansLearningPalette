@@ -1,0 +1,121 @@
+<PaletteItem>
+    <Category>Objects, Classes, Methods</Category>
+    <DisplayName>New Method</DisplayName>
+    <Tooltip>Create a new method.</Tooltip>
+    <Languages>
+        <Language id="JAVA">
+            <codeTemplate1>public void yourMethod(){}</codeTemplate1>
+            
+            <codeTemplate2>$modType $returnType $varName($paramType $paramName) {}</codeTemplate2>
+            
+            <codeTemplate3>$modType $returnType $varName($paramType $paramName) {
+                return "";
+                }</codeTemplate3>
+    
+            <codeTemplate4>$modType $returnType $varName($paramType $paramName) {
+                return true;
+                }</codeTemplate4>
+    
+            <codeTemplate5>$modType $returnType $varName($paramType $paramName) {
+                return 0;
+                }</codeTemplate5>
+
+            <!-- Return Types -->
+            <voidValue>void</voidValue>
+            <integerValue>int</integerValue>
+            <doubleValue>double</doubleValue>
+            <stringValue>String</stringValue>
+            <booleanValue>boolean</booleanValue>
+            <byteValue>byte</byteValue>
+            <charValue>char</charValue>
+            <floatValue>float</floatValue>
+            <longValue>long</longValue>
+            <shortValue>short</shortValue>
+            <noValue><![CDATA[]]></noValue>
+            
+            <!-- Modifier Types -->
+            <publicValue>public</publicValue>
+            <privateValue>private</privateValue>
+
+        </Language>
+        <Language id="CPP">
+            <codeTemplate1>public void yourMethod(){}</codeTemplate1>
+            
+            <codeTemplate2>$modType $returnType $varName() {}</codeTemplate2>
+            
+            <codeTemplate3>$modType $returnType $varName() {
+                return "";
+                }</codeTemplate3>
+    
+            <codeTemplate4>$modType $returnType $varName() {
+                return true;
+                }</codeTemplate4>
+    
+            <codeTemplate5>$modType $returnType $varName() {
+                return 0;
+                }</codeTemplate5>
+
+            <!-- Return Types -->
+            <voidValue>void</voidValue>
+            <integerValue>int</integerValue>
+            <doubleValue>double</doubleValue>
+            <stringValue>String</stringValue>
+            <booleanValue>boolean</booleanValue>
+            <byteValue>byte</byteValue>
+            <charValue>char</charValue>
+            <floatValue>float</floatValue>
+            <longValue>long</longValue>
+            <shortValue>short</shortValue>
+            <noValue><![CDATA[]]></noValue>
+            
+            <!-- Modifier Types -->
+            <publicValue>public</publicValue>
+            <privateValue>private</privateValue>
+
+
+            
+        </Language>
+    </Languages>
+    <!-- Customizer dynamic creation at runtime, currently supported controls:
+        Text, Combo
+    -->
+    <Customizer>
+        <Item type="Combo" name="ModifierValue" label="Modifier Type:" value="" >
+            <!-- Note first item on list is default (index 0)) -->
+            <Value>(None)</Value>
+            <Value>public</Value>
+            <Value>private</Value>
+        </Item>
+        <Item type="Combo" name="ReturnValue" label="Method Return Value:" value="" >
+            <!-- Note first item on list is default (index 0)) -->
+            <Value>(None)</Value>
+            <Value>void</Value>
+            <Value>int</Value>
+            <Value>double</Value>
+            <Value>String</Value>
+            <Value>boolean</Value>
+            <Value>byte</Value>
+            <Value>char</Value>
+            <Value>float</Value>
+            <Value>long</Value>
+            <Value>short</Value>
+        </Item>
+        <Item type="Text" name="VariableName" label="Method Name:" value="" />
+        <Item type="Combo" name="ParameterType" label="Parameter Type:" value="" >
+            <!-- Note first item on list is default (index 0)) -->
+            <Value>(None)</Value>
+            <Value>int</Value>
+            <Value>double</Value>
+            <Value>String</Value>
+            <Value>boolean</Value>
+            <Value>byte</Value>
+            <Value>char</Value>
+            <Value>float</Value>
+            <Value>long</Value>
+            <Value>short</Value>
+        </Item>
+        <Item type="Text" name="ParameterName" label="Parameter Name:" value="" />
+        <Item type="Text" name="Comment" label="Comment:" value="" />
+    </Customizer>
+    <PaletteLogicClass>org.qcc.modules.learningpalette.ObjectsClassesMethods.LP_NewMethod</PaletteLogicClass>
+</PaletteItem>

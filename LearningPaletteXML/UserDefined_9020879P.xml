@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><PaletteItem><Category>User Defined</Category><DisplayName>Test Item</DisplayName><Tooltip>This is a testing item only.</Tooltip><Languages><Language id="JAVA"><codeTemplate>//$Comment
+if ($Expression) {
+	//$Variable
+}</codeTemplate></Language><Language id="CPP"><codeTemplate/></Language></Languages><PaletteLogicClass>org.qcc.modules.learningpalette.LP_BasicInput</PaletteLogicClass><Customizer><Item label="If Condition" name="$Expression" type="Expression" value=""/><Item label="Comment" name="$Comment" type="Text" value=""/><Item label="Variable Select:" name="$Variable" type="Variable" value=""/></Customizer></PaletteItem>
