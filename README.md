@@ -20,6 +20,9 @@ NetBeans Learning Palette - Designed for the beginner programmer learning Java o
     * Runtime creation of forms
       * Including creation of event handlers for each dynamically generated control.
       
+
+- ----------------------------------------------------------------------------------------------------------------
+
 ![Settings Window](https://cloud.githubusercontent.com/assets/10710315/12189964/1457bf2e-b591-11e5-91bc-1e497cd55a4b.png)
 
 
